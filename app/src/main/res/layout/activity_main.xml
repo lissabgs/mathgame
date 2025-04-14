@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="textStart"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="monospace"
+        android:text="MathGame"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtAnswer"
+        android:layout_width="261dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="156dp"
+        android:elegantTextHeight="true"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="Digite sua resposta"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:height="48dp"
+        android:backgroundTint="#009688"
+        android:fontFamily="monospace"
+        android:text="Submeter"
+        android:textColorHighlight="#009688"
+        android:textColorLink="#902626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAnswer" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#009688"
+        android:fontFamily="monospace"
+        android:text="Próximo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toEndOf="@+id/btnSubmit"
+        app:layout_constraintTop_toBottomOf="@+id/edtAnswer" />
+
+    <TextView
+        android:id="@+id/txtFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNext" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="monospace"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtAnswer"
+        app:layout_constraintStart_toStartOf="@+id/nome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
